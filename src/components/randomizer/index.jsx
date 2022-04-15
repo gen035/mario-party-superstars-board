@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { sample } from 'lodash';
 import Map from './map';
 
 function Randomizer() {
@@ -23,16 +24,16 @@ function Randomizer() {
   };
 
   const randomize = () => {
-    const max = maps && maps.length - 1 || 0;
-    const selectedIndex = Math.floor(Math.random() * max);
-    const selectedMap = maps && maps.length > 0 && maps[selectedIndex];
+    const mapsCopy = [...maps];
+    const duplicate = [...mapsCopy, ...mapsCopy]; //Duplicate to avoid drawing same map in a row
+    const item = sample(duplicate);
 
-    setSelectedMap(selectedMap);
+    setSelectedMap(item);
     setView("loading");
 
     setTimeout(() => {
       setView("map");
-    }, 3000);
+    }, 2000);
   };
 
   const renderButton = () => {
