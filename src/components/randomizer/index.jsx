@@ -2,11 +2,15 @@ import React, {useEffect, useState} from 'react';
 import Map from './map';
 
 function Randomizer() {
-  const [hasRandomized, setHasRandomized] = useState(false);
   const [maps, setMaps] = useState();
   const [selectedMap, setSelectedMap] = useState();
-  const [showSelectedMap, setShowSelectedMap] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [buttonValues] = useState({
+    "initial": "Select...",
+    "loading": "Let me think...",
+    "map": "Meh... try again",
+    "allMaps": "Select..."
+  });
+  const [view, setView] = useState('initial');
 
   useEffect(() => {
     fetchMaps();
@@ -22,18 +26,24 @@ function Randomizer() {
     const max = maps && maps.length - 1 || 0;
     const selectedIndex = Math.floor(Math.random() * max);
     const selectedMap = maps && maps.length > 0 && maps[selectedIndex];
-    setHasRandomized(true);
+
     setSelectedMap(selectedMap);
-    setIsLoading(true);
+    setView("loading");
 
     setTimeout(() => {
-      setIsLoading(false);
-      setShowSelectedMap(true);
+      setView("map");
     }, 3000);
   };
 
   const renderButton = () => {
-    return <button type="button" className="btn btn-success" onClick={randomize}>{hasRandomized ? 'Meh...retry' : 'Select Map'}</button>
+    return (
+      <>
+        <button type="button" className="btn btn-lg btn-success" onClick={randomize}>
+          {buttonValues[view]}
+        </button>
+        <button type="button" className={`btn btn-lg btn-primary ${view === "allMaps" ? 'disabled' : ''}`} onClick={() => setView("allMaps")}>Show All Boards</button>
+      </>
+    )
   };
 
   const renderLoader = () => {
@@ -51,16 +61,21 @@ function Randomizer() {
       <Map data={selectedMap} />
     )
   };
-
+  
   return (
     <div className="randomizer">
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 d-flex justify-content-center">
           {renderButton()}
         </div>
       </div>
-      {isLoading && renderLoader()}
-      {showSelectedMap && renderSelectedMap()}
+      {view === "loading" && renderLoader()}
+      {view === "map" && renderSelectedMap()}
+      {view === "allMaps" && (
+        maps.map(item => {
+          return <Map key={item.id} data={item} />
+        })
+      )}
     </div>
   );
 }
