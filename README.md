@@ -1,3 +1,6 @@
+# Mario Party Super Stars Board Randomizer
+Don't know which board to select for your next Mario Party Super Stars game? Why not let an app decide for you.
+[Live version](https://mario-party-randomizer.herokuapp.com/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
