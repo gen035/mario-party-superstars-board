@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import Map from './map';
 import './styles.sass';
 
 function Randomizer() {
   const [hasRandomized, setHasRandomized] = useState(false);
   const [maps, setMaps] = useState();
   const [selectedMap, setSelectedMap] = useState();
-  const [isLoading, setIsLoading] = useState(true)
+  const [showSelectedMap, setShowSelectedMap] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     fetchMaps();
@@ -23,6 +25,12 @@ function Randomizer() {
     const selectedMap = maps && maps.length > 0 && maps[selectedIndex];
     setHasRandomized(true);
     setSelectedMap(selectedMap);
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      setShowSelectedMap(true);
+    }, 3000);
   };
 
   const renderButton = () => {
@@ -30,19 +38,30 @@ function Randomizer() {
   };
 
   const renderLoader = () => {
-    if(isLoading) {
-      return <img className="randomizer__loading" src="/images/mario_loading.gif" alt="Loading..." />
-    }
+    return (
+      <div className="row">
+        <div className="col-12">
+          <img className={`randomizer__loading is-visible`} src="/images/mario_loading.gif" alt="Loading..." />
+        </div>
+      </div>
+    )
+  };
+
+  const renderSelectedMap = () => {
+    return (
+      <Map data={selectedMap} />
+    )
   };
 
   return (
     <div className="randomizer">
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-12">
           {renderButton()}
         </div>
-        {renderLoader()}
       </div>
+      {isLoading && renderLoader()}
+      {showSelectedMap && renderSelectedMap()}
     </div>
   );
 }
