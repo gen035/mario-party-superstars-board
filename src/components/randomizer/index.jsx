@@ -11,7 +11,7 @@ function Randomizer() {
     "map": "Meh... try again",
     "allMaps": "Select..."
   });
-  const [view, setView] = useState('initial');
+  const [view, setView] = useState('allMaps');
 
   useEffect(() => {
     fetchMaps();
@@ -73,7 +73,7 @@ function Randomizer() {
       {view === "loading" && renderLoader()}
       {view === "map" && renderSelectedMap()}
       {view === "allMaps" && (
-        maps.map(item => {
+        maps && maps.map(item => {
           return <Map key={item.id} data={item} />
         })
       )}

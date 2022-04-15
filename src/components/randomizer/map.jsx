@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Map({ data }) {
-  const {name, game, image, description} = data;
+  const { id, name, game, image, description} = data;
   return (
-    <div className="map">
+    <div className={`map map--${id}`}>
       <div className="row">
         <div className="col-12">
           <h2>{name}</h2>
