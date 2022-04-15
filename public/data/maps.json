@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "game": "Mario Party",
+    "name": "Yoshi’s Tropical Island",
+    "image": "1600px-MPS_Yoshis_Tropical_Island.jpg",
+    "description": "Far and away the most straightforward of all the maps included, this is a board with really only one gimmick. Broken up across two islands connected by bridges, the star location only chances if you land on an Event Space. Doing so swaps the star with Bowser, who will give you a cute floatable that explodes for a hefty price. Understanding how and when to swap the star’s location can definitely come in handy for backstabbing your opponents. So, if you’re new to the Mario Party series or are just looking for a quick and fast game, this is definitely the map for you."
+  },
+  {
+    "id": 2,
+    "game": "Mario Party 2",
+    "name": "Space Land",
+    "image": "1600px-MPS_Space_Land.jpg",
+    "description": "A fan favorite, Space Land is a healthy balance of mechanics, randomness, locked doors, and a giant laser beam. Set on a floating city made up of a spider’s web of interconnecting pathways, Space Land can be a tricky map to navigate at first. However, once you get a hang of the different routes and shortcuts, this becomes one of the best-designed maps in the entire game. Not only do you have to constantly adapt due to the star moving spots, but you also have to keep track of a timer that acts as a countdown for a massive laser beam. Did I mention the Snifits driving police cars or random banks that can give you a huge payout if you’re lucky enough to land on one? Yeah, Space Land is definitely a lot of fun."
+  },
+  {
+    "id": 3,
+    "game": "Mario Party",
+    "name": "Peach's Birthday Cake",
+    "image": "1600px-MPS_Peachs_Birthday_Cake.jpg",
+    "description": "Another classic map, Peach’s Birthday Cake has a spiral design that leads up to the static star located at the top. Where things get interesting is how Event Spaces create deadly hazards that you can benefit from. If you land on any along the bottom rung, you can pay a fee to spawn a Piranha Plant that will steal your opponent’s coins or stars! This can create some seriously tense moments as you get towards the late game, where people are kicking stars left and right."
+  },
+  {
+    "id": 4,
+    "game": "Mario Party 3",
+    "name": "Woody Woods",
+    "image": "1600px-MPS_Woody_Woods.jpg",
+    "description": "Woody Woods is really about a single gimmick, but it can make or break your entire chance at winning depending on how lucky you are. At the start of every round, the mole will appear and swap the direction you can go at three different intersections. While this can certainly derail your opponents, it will easily provide just as many headaches for you. The only problem with this mechanic is that it really comes down to your dice roll, which can make playing around it tricky. This board also includes two trees, each of which will reward (or punish) you. I like this little touch, as it makes two areas on the board either extremely desirable or quite dangerous. That being said, you probably won’t see them a ton during a normal game, which is a bit frustrating."
+  },
+  {
+    "id": 5,
+    "game": "Mario Party 2",
+    "name": "Horror Land",
+    "image": "1600px-MPS_Horror_Land.jpg",
+    "description": "Absolutely the most complicated board included, Horror Land is all about mastering the day and night cycle and taking advantage of when various mechanics are available. For example, there are Whomp toll booths available during the day; at night, these will be locked and force you to go another way. There are also various Boos that will appear, including King Boo, which you can use to steal a vast amount of coins from players. Since when the time of day shifts is always the same, you can easily plan around this to adapt to the changing board. It’s a wonderfully intricate map. The only downside is you really need to play with a higher round count to fully enjoy it."
+  }
+]
