@@ -22,11 +22,14 @@
       background: url('https://freepngimg.com/download/super_mario/36165-8-mario-party-photos.png') center no-repeat
       background-size: cover
     &::after
+      display: none
       height: 90px
       width: 89px
       background: url('https://www.pinclipart.com/picdir/big/152-1527643_yoshi-clip-art-freeuse-library-mario-sports-mix.png') center no-repeat
       //background: url('https://www.pngkey.com/png/full/910-9106669_mario-mario-party-3-mario.png') center no-repeat
       background-size: cover
+      @media (min-width: $bp-sm)
+        display: block
   &--2
     &::before
       height: 60px
@@ -45,10 +48,13 @@
       background: url('https://upload.wikimedia.org/wikipedia/en/1/16/Princess_Peach_Stock_Art.png') center no-repeat
       background-size: cover
     &::after
+      display: none
       height: 90px
       width: 74px
       background: url('https://upload.wikimedia.org/wikipedia/en/c/ce/Goomba.PNG') center no-repeat
       background-size: cover
+      @media (min-width: $bp-sm)
+        display: block
   &--4
     &::after
       height: 50px
@@ -79,8 +85,15 @@
 
     h2
       display: inline
-    span
-      margin-left: 10px
-
+      font-size: 20px
+      @media (min-width: $bp-md)
+        font-size: 24px
+  img
+    margin-bottom: 16px
+    @media (min-width: $bp-md)
+      margin-bottom: 0
+  h3
+    font-family: $mario
+    font-size: 14px
   p
     font-family: $roboto

@@ -66,7 +66,7 @@ function Randomizer() {
   return (
     <div className="randomizer">
       <div className="row">
-        <div className="col-12 d-flex justify-content-center">
+        <div className="col-12 d-flex flex-column flex-sm-row justify-content-center">
           {renderButton()}
         </div>
       </div>

@@ -6,17 +6,17 @@ function Map({ data }) {
   return (
     <div className={`map map--${id}`}>
       <div className="row">
-        <div className="col-12 d-flex align-items-center justify-content-center map__header">
-          <h2>{name} - </h2>
-          <span>{game}</span>
+        <div className="col-12 map__header">
+          <h2>{name}</h2>
         </div>
       </div>
       <div className="row d-flex align-items-center">
         <div className="col-md-6">
-          <p>{description}</p>
+          <img src={`/images/boards/${image}`} alt={`Map Thumbnail ${name}`} />
         </div>
         <div className="col-md-6">
-          <img src={`/images/boards/${image}`} alt={`Map Thumbnail ${name}`} />
+          <h3>Original game: {game}</h3>
+          <p>{description}</p>
         </div>
       </div>
     </div>
