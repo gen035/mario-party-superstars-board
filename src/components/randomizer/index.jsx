@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Map from './map';
-import './styles.sass';
 
 function Randomizer() {
   const [hasRandomized, setHasRandomized] = useState(false);
