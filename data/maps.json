@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "game": "Mario Party",
+    "name": "Yoshi’s Tropical Island",
+    "image": "1600px-MPS_Yoshis_Tropical_Island.jpg",
+    "description": "Yoshi's Tropical Island is Yoshi's board featured in Mario Party, and Mario Party Superstars. This board is a tropical island where many Yoshis live at. Two Yoshis are shown in the middle of the island. These two Yoshis need help; the Pink Yoshi is stuck on a small island surrounded by whirlpools and the Blue Yoshi, the Pink Yoshi's best friend is worried and watches from the shore."
+  },
+  {
+    "id": 2,
+    "game": "Mario Party 2",
+    "name": "Space Land",
+    "image": "1600px-MPS_Space_Land.jpg",
+    "description": "Space Land takes place in a space station located in outer-space. The space station is surrounded by high-tech machines and various other gadgets spread out across the board. A recent crime problem has occurred at the station. If a character lands on a Happening Space, a Thwomp or Whomp in a space craft will chase the character to another part of the board."
+  },
+  {
+    "id": 3,
+    "game": "Mario Party",
+    "name": "Peach's Birthday Cake",
+    "image": "1600px-MPS_Peachs_Birthday_Cake.jpg",
+    "description": "Peach's Birthday Cake is Princess Peach's board featured in Mario Party and Mario Party Superstars. The theme revolves around players are looking for stars on a giant Birthday Cake. Peach made a giant cake but needs to light the candles."
+  },
+  {
+    "id": 4,
+    "game": "Mario Party 3",
+    "name": "Woody Woods",
+    "image": "1600px-MPS_Woody_Woods.jpg",
+    "description": "The board is filled with various Mario series critters including Wigglers, Piranha Plants, and rabbits. The character will be able to travel through the woods and interact with the various forest creatures. The characters will come across several junctions that contain sign posts in front of them. The signs will have a large arrow on them pointing into one direction. When a character reaches one of these junctions, they will be forced to follow the direction the sign is pointing. The signs will change directions every turn."
+  },
+  {
+    "id": 5,
+    "game": "Mario Party 2",
+    "name": "Horror Land",
+    "image": "1600px-MPS_Horror_Land.jpg",
+    "description": "Horror Land takes place in an old meadow on the side of the road. The board map uses a Day/Night system that alters the time of day every two turns. Depending on the time of day, the characters may encounter new characters, participate in different events, and may be forced to take different paths. During the day time, the board looks like an ordinary meadow with a few buildings. During the night, ghosts can be seen around the board along with reanimated objects including a house and taxi. The characters will be able to meet a wide variety of characters on the board including Mr. I, Whomp, Magikoopa, and Big Boo."
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mario-party-superstars-board/static/css/main.7590360b.css",
+    "main.js": "/mario-party-superstars-board/static/js/main.96e3694d.js",
+    "static/media/SuperMarioBros.svg": "/mario-party-superstars-board/static/media/SuperMarioBros.daaaee4ae895062c5b26.svg",
+    "static/media/SuperMarioBros.eot": "/mario-party-superstars-board/static/media/SuperMarioBros.21e8a99383db44c108cc.eot",
+    "static/media/SuperMarioBros.ttf": "/mario-party-superstars-board/static/media/SuperMarioBros.1a4840c7a987d6621635.ttf",
+    "static/media/SuperMarioBros.woff": "/mario-party-superstars-board/static/media/SuperMarioBros.cd0d75f4e6917244a69b.woff",
+    "static/media/SuperMarioBros.woff2": "/mario-party-superstars-board/static/media/SuperMarioBros.520d555e9fdc690a5adb.woff2",
+    "index.html": "/mario-party-superstars-board/index.html",
+    "main.7590360b.css.map": "/mario-party-superstars-board/static/css/main.7590360b.css.map",
+    "main.96e3694d.js.map": "/mario-party-superstars-board/static/js/main.96e3694d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7590360b.css",
+    "static/js/main.96e3694d.js"
+  ]
+}
