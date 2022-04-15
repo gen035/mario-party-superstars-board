@@ -4,7 +4,25 @@
   color: $white
   margin: 50px auto
   padding: 20px
-
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    height: 50px
+    width: 50px
+    background: url('https://static.wikia.nocookie.net/mario/images/1/17/Star3dworld.png') center no-repeat
+    background-size: cover
+    top: -20px
+    right: -20px
+  &::before
+    content: ""
+    position: absolute
+    height: 50px
+    width: 47px
+    background: url('https://static.wikia.nocookie.net/diceblock/images/a/a0/Boo_Island_Tour.png') center no-repeat
+    background-size: cover
+    bottom: -25px
+    left: -15px
   h2
     font-family: $mario
     text-align: center
