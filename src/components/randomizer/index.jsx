@@ -11,7 +11,7 @@ function Randomizer() {
     "map": "Meh... try again",
     "allMaps": "Select..."
   });
-  const [view, setView] = useState('allMaps');
+  const [view, setView] = useState('initial');
 
   useEffect(() => {
     fetchMaps();

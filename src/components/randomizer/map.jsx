@@ -6,8 +6,9 @@ function Map({ data }) {
   return (
     <div className={`map map--${id}`}>
       <div className="row">
-        <div className="col-12">
-          <h2>{name}</h2>
+        <div className="col-12 d-flex align-items-center justify-content-center map__header">
+          <h2>{name} - </h2>
+          <span>{game}</span>
         </div>
       </div>
       <div className="row d-flex align-items-center">
