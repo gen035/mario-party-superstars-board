@@ -6,10 +6,10 @@ function Randomizer() {
   const [maps, setMaps] = useState();
   const [selectedMap, setSelectedMap] = useState();
   const [buttonValues] = useState({
-    "initial": "Select...",
+    "initial": "I wanna play",
     "loading": "Let me think...",
     "map": "Meh... try again",
-    "allMaps": "Select..."
+    "allMaps": "I wanna play"
   });
   const [view, setView] = useState('initial');
 
